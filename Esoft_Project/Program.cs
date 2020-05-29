@@ -8,6 +8,8 @@ namespace Esoft_Project
 {
     static class Program
     {
+        //создание статического экзмпляра класса модели ADo.EDM
+        public static WFTutorialEntities1 wftDb = new WFTutorialEntities1();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +18,7 @@ namespace Esoft_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new Menu());
         }
     }
 }
