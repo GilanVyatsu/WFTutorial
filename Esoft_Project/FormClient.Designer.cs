@@ -57,7 +57,6 @@
             this.textBoxFirstName.Name = "textBoxFirstName";
             this.textBoxFirstName.Size = new System.Drawing.Size(145, 25);
             this.textBoxFirstName.TabIndex = 0;
-            this.textBoxFirstName.Text = "Петр";
             this.textBoxFirstName.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBoxMiddleName
@@ -67,7 +66,6 @@
             this.textBoxMiddleName.Name = "textBoxMiddleName";
             this.textBoxMiddleName.Size = new System.Drawing.Size(145, 25);
             this.textBoxMiddleName.TabIndex = 1;
-            this.textBoxMiddleName.Text = "Иванович";
             // 
             // textBoxLastName
             // 
@@ -76,7 +74,6 @@
             this.textBoxLastName.Name = "textBoxLastName";
             this.textBoxLastName.Size = new System.Drawing.Size(145, 25);
             this.textBoxLastName.TabIndex = 2;
-            this.textBoxLastName.Text = "Иванов";
             // 
             // textBoxPhone
             // 
@@ -85,7 +82,6 @@
             this.textBoxPhone.Name = "textBoxPhone";
             this.textBoxPhone.Size = new System.Drawing.Size(145, 25);
             this.textBoxPhone.TabIndex = 3;
-            this.textBoxPhone.Text = "79365789532";
             // 
             // textBoxEmail
             // 
@@ -94,7 +90,6 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(145, 25);
             this.textBoxEmail.TabIndex = 4;
-            this.textBoxEmail.Text = "iv.ivanow@mail.ru";
             // 
             // labelFirstName
             // 
