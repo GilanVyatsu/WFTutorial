@@ -61,11 +61,11 @@
     <Compile Include="ClientSet.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="FormRealEstate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="FormRealEstate.Designer.cs">
+      <DependentUpon>FormRealEstate.cs</DependentUpon>
     </Compile>
     <Compile Include="FormAgent.cs">
       <SubType>Form</SubType>
@@ -73,11 +73,8 @@
     <Compile Include="FormAgent.Designer.cs">
       <DependentUpon>FormAgent.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormlClient.cs">
+    <Compile Include="FormRealEstate1.cs">
       <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormlClient.Designer.cs">
-      <DependentUpon>FormlClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
@@ -112,8 +109,8 @@
       <DependentUpon>Model1.tt</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="FormRealEstate.resx">
+      <DependentUpon>FormRealEstate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormAgent.resx">
       <DependentUpon>FormAgent.cs</DependentUpon>

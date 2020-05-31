@@ -44,8 +44,8 @@ namespace Esoft_Project
         private void buttonOpenRealEstates_Click(object sender, EventArgs e)
         {
             //Задаем новую форму из класса объекты недвижимости и открываем ее
-            Form formReakEstate = new FormRealEstate();
-            formReakEstate.Show();
+            Form formRealEstate = new FormRealEstate();
+            formRealEstate.Show();
         }
     }
 }

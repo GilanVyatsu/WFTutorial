@@ -17,8 +17,12 @@ namespace Esoft_Project
             InitializeComponent();
             ShowAgent();
         }
-        
-        
+
+        private void ShowAgent()
+        {
+            throw new NotImplementedException();
+        }
+
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             //создаем новый экземпляр класса Агента
@@ -31,8 +35,9 @@ namespace Esoft_Project
             Program.wftDb.AgentSet.Add(agentSet);
             //сохраняем изменения в модели wftDb (экземпляр которой был создан ранее)
             Program.wftDb.SaveChanges();
-            ShowAgent();
+            
         }
+    
 
         private void buttonEdit_Click(object sender, EventArgs e)
         {
@@ -107,6 +112,7 @@ namespace Esoft_Project
                 textBoxDealShare.Text = "";
 
             }
+
             void ShowAgent()
             {
                 //предварительное оповещение listView
