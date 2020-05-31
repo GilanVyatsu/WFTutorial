@@ -273,6 +273,7 @@ namespace Esoft_Project
             this.listViewRealEstateSet_Land.UseCompatibleStateImageBehavior = false;
             this.listViewRealEstateSet_Land.View = System.Windows.Forms.View.Details;
             this.listViewRealEstateSet_Land.Visible = false;
+            this.listViewRealEstateSet_Land.SelectedIndexChanged += new System.EventHandler(this.listViewRealEstateSet_Land_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -521,6 +522,11 @@ namespace Esoft_Project
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void listView2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void buttonEdit_Click(object sender, EventArgs e)
