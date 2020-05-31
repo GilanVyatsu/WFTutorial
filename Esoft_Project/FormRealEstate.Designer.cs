@@ -1,4 +1,6 @@
-﻿namespace Esoft_Project
+﻿using System;
+
+namespace Esoft_Project
 {
     partial class RealEstateSet
     {
@@ -29,10 +31,10 @@
         private void InitializeComponent()
         {
             this.textBoxAddress_City = new System.Windows.Forms.TextBox();
-            this.textBoxLongtitude = new System.Windows.Forms.TextBox();
+            this.textBoxCoordinate_Longitude = new System.Windows.Forms.TextBox();
             this.textBoxAddress_House = new System.Windows.Forms.TextBox();
             this.textBoxAddress_Number = new System.Windows.Forms.TextBox();
-            this.textBoxLatitude = new System.Windows.Forms.TextBox();
+            this.textBoxCoordinate_Latitude = new System.Windows.Forms.TextBox();
             this.textBoxAddress_Street = new System.Windows.Forms.TextBox();
             this.textBoxTotalArea = new System.Windows.Forms.TextBox();
             this.textBoxTotalFloor = new System.Windows.Forms.TextBox();
@@ -89,12 +91,12 @@
             this.textBoxAddress_City.Size = new System.Drawing.Size(149, 20);
             this.textBoxAddress_City.TabIndex = 0;
             // 
-            // textBoxLongtitude
+            // textBoxCoordinate_Longitude
             // 
-            this.textBoxLongtitude.Location = new System.Drawing.Point(339, 88);
-            this.textBoxLongtitude.Name = "textBoxLongtitude";
-            this.textBoxLongtitude.Size = new System.Drawing.Size(149, 20);
-            this.textBoxLongtitude.TabIndex = 1;
+            this.textBoxCoordinate_Longitude.Location = new System.Drawing.Point(339, 88);
+            this.textBoxCoordinate_Longitude.Name = "textBoxCoordinate_Longitude";
+            this.textBoxCoordinate_Longitude.Size = new System.Drawing.Size(149, 20);
+            this.textBoxCoordinate_Longitude.TabIndex = 1;
             // 
             // textBoxAddress_House
             // 
@@ -110,12 +112,12 @@
             this.textBoxAddress_Number.Size = new System.Drawing.Size(149, 20);
             this.textBoxAddress_Number.TabIndex = 3;
             // 
-            // textBoxLatitude
+            // textBoxCoordinate_Latitude
             // 
-            this.textBoxLatitude.Location = new System.Drawing.Point(339, 36);
-            this.textBoxLatitude.Name = "textBoxLatitude";
-            this.textBoxLatitude.Size = new System.Drawing.Size(149, 20);
-            this.textBoxLatitude.TabIndex = 4;
+            this.textBoxCoordinate_Latitude.Location = new System.Drawing.Point(339, 36);
+            this.textBoxCoordinate_Latitude.Name = "textBoxCoordinate_Latitude";
+            this.textBoxCoordinate_Latitude.Size = new System.Drawing.Size(149, 20);
+            this.textBoxCoordinate_Latitude.TabIndex = 4;
             // 
             // textBoxAddress_Street
             // 
@@ -509,10 +511,10 @@
             this.Controls.Add(this.textBoxTotalFloor);
             this.Controls.Add(this.textBoxTotalArea);
             this.Controls.Add(this.textBoxAddress_Street);
-            this.Controls.Add(this.textBoxLatitude);
+            this.Controls.Add(this.textBoxCoordinate_Latitude);
             this.Controls.Add(this.textBoxAddress_Number);
             this.Controls.Add(this.textBoxAddress_House);
-            this.Controls.Add(this.textBoxLongtitude);
+            this.Controls.Add(this.textBoxCoordinate_Longitude);
             this.Controls.Add(this.textBoxAddress_City);
             this.Name = "RealEstateSet";
             this.Text = "Form1";
@@ -521,13 +523,28 @@
 
         }
 
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void comboBoxType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
+        private void buttonAdd_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         #endregion
 
         private System.Windows.Forms.TextBox textBoxAddress_City;
-        private System.Windows.Forms.TextBox textBoxLongtitude;
+        private System.Windows.Forms.TextBox textBoxCoordinate_Longitude;
         private System.Windows.Forms.TextBox textBoxAddress_House;
         private System.Windows.Forms.TextBox textBoxAddress_Number;
-        private System.Windows.Forms.TextBox textBoxLatitude;
+        private System.Windows.Forms.TextBox textBoxCoordinate_Latitude;
         private System.Windows.Forms.TextBox textBoxAddress_Street;
         private System.Windows.Forms.TextBox textBoxTotalArea;
         private System.Windows.Forms.TextBox textBoxTotalFloor;

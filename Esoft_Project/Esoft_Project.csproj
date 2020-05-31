@@ -73,9 +73,6 @@
     <Compile Include="FormAgent.Designer.cs">
       <DependentUpon>FormAgent.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormRealEstate1.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Menu.cs">
       <SubType>Form</SubType>
     </Compile>
