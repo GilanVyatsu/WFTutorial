@@ -32,7 +32,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonOpenSopplySet = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -79,14 +79,15 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.buttonOpenRealEstates_Click);
             // 
-            // button4
+            // buttonOpenSopplySet
             // 
-            this.button4.Location = new System.Drawing.Point(12, 356);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(255, 48);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "Предложения";
-            this.button4.UseVisualStyleBackColor = true;
+            this.buttonOpenSopplySet.Location = new System.Drawing.Point(12, 356);
+            this.buttonOpenSopplySet.Name = "buttonOpenSopplySet";
+            this.buttonOpenSopplySet.Size = new System.Drawing.Size(255, 48);
+            this.buttonOpenSopplySet.TabIndex = 4;
+            this.buttonOpenSopplySet.Text = "Предложения";
+            this.buttonOpenSopplySet.UseVisualStyleBackColor = true;
+            this.buttonOpenSopplySet.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -113,7 +114,7 @@
             this.ClientSize = new System.Drawing.Size(279, 561);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonOpenSopplySet);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -133,7 +134,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonOpenSopplySet;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
     }
