@@ -4,10 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="7adc145e84d144f3be5d8dff122828ad" Name="Diagram1">
-        <EntityTypeShape EntityType="WFTutorialModel.AgentSet" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WFTutorialModel.ClientSet" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="WFTutorialModel.RealEstateSet" Width="1.5" PointX="5.375" PointY="0.625" IsExpanded="true" />
+      <Diagram DiagramId="f2a0f57af7b14481a89611093ebfc878" Name="Diagram1">
+        <EntityTypeShape EntityType="WFTutorialModel.AgentSet" Width="1.5" PointX="0.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutorialModel.ClientSet" Width="1.5" PointX="6.125" PointY="3" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutorialModel.RealEstateSet" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="WFTutorialModel.SupplySet" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <AssociationConnector Association="WFTutorialModel.FK_SupplySet_Agent" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutorialModel.FK_SupplySet_ClientSet" ManuallyRouted="false" />
+        <AssociationConnector Association="WFTutorialModel.FK_SupplySet_RealEstate" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
