@@ -153,9 +153,29 @@ private void buttonEdit_Click(object sender, EventArgs e)
     catch 
     {
     MessageBox.Show("невозможно удалить, эта запись испольхуется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
-    }
+    
+        void ShowSupplySet()
+    {
 
-                 
-}
-  
+        {
+            
+            {
+
+                supply.idAgents.ToString();
+                   supply.AgentsSet.LastName +" "+supply.AgentsSet.FirstName+" "+supply.AgentsSet.MiddleName,
+                       supply.idClients.ToString(),
+                    supply.ClientsSet.LastName + " " + supply.ClientsSet.FirstName +" "+supply.ClientsSet.MiddleName,
+                "г. " +supply.RealEstateSet.Address_City+," ул. " +supply.RealEstateSet.Address_Street+ "д. "+ supply.RealEstateSet.Address_House+," KB. "+supply.RealEstateSet.Address_Number,
+                  supply.Price.ToString()
+            });
+           
+
+
+        }
+
+
+
+
+
+
 

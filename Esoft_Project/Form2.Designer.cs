@@ -44,6 +44,9 @@
             this.comboBoxAgents = new System.Windows.Forms.ComboBox();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.comboBoxRealEstate = new System.Windows.Forms.ComboBox();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // textBoxPrice
@@ -95,14 +98,17 @@
             this.columnHeader1,
             this.columnHeader2,
             this.columnHeader3,
-            this.columnHeader4});
+            this.columnHeader4,
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7});
             this.ListViewSupplySet.FullRowSelect = true;
             this.ListViewSupplySet.GridLines = true;
             this.ListViewSupplySet.HideSelection = false;
-            this.ListViewSupplySet.Location = new System.Drawing.Point(318, 24);
+            this.ListViewSupplySet.Location = new System.Drawing.Point(262, 24);
             this.ListViewSupplySet.MultiSelect = false;
             this.ListViewSupplySet.Name = "ListViewSupplySet";
-            this.ListViewSupplySet.Size = new System.Drawing.Size(444, 310);
+            this.ListViewSupplySet.Size = new System.Drawing.Size(643, 310);
             this.ListViewSupplySet.TabIndex = 5;
             this.ListViewSupplySet.UseCompatibleStateImageBehavior = false;
             this.ListViewSupplySet.View = System.Windows.Forms.View.Details;
@@ -111,21 +117,22 @@
             // columnHeader1
             // 
             this.columnHeader1.Text = "Риелтор";
-            this.columnHeader1.Width = 116;
+            this.columnHeader1.Width = 110;
             // 
             // columnHeader2
             // 
-            this.columnHeader2.Text = "Клиент";
-            this.columnHeader2.Width = 120;
+            this.columnHeader2.Text = "idРиелтора";
+            this.columnHeader2.Width = 107;
             // 
             // columnHeader3
             // 
-            this.columnHeader3.Text = "Объекты недвижимости";
-            this.columnHeader3.Width = 144;
+            this.columnHeader3.Text = "Клиент";
+            this.columnHeader3.Width = 111;
             // 
             // columnHeader4
             // 
-            this.columnHeader4.Text = "Цена";
+            this.columnHeader4.Text = "idКлиента";
+            this.columnHeader4.Width = 70;
             // 
             // buttonAdd
             // 
@@ -183,11 +190,25 @@
             this.comboBoxRealEstate.Size = new System.Drawing.Size(233, 21);
             this.comboBoxRealEstate.TabIndex = 11;
             // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "Объект недвижимости";
+            this.columnHeader5.Width = 133;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "idОбъекта недвижимости";
+            this.columnHeader6.Width = 73;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "Цена";
+            // 
             // SupplySet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(917, 446);
             this.Controls.Add(this.comboBoxRealEstate);
             this.Controls.Add(this.comboBoxClients);
             this.Controls.Add(this.comboBoxAgents);
@@ -226,5 +247,8 @@
         private System.Windows.Forms.ComboBox comboBoxAgents;
         private System.Windows.Forms.ComboBox comboBoxClients;
         private System.Windows.Forms.ComboBox comboBoxRealEstate;
+        private System.Windows.Forms.ColumnHeader columnHeader5;
+        private System.Windows.Forms.ColumnHeader columnHeader6;
+        private System.Windows.Forms.ColumnHeader columnHeader7;
     }
 }
