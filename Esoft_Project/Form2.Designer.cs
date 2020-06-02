@@ -34,16 +34,16 @@
             this.labelRealEstate = new System.Windows.Forms.Label();
             this.labelPrice = new System.Windows.Forms.Label();
             this.ListViewSupplySet = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttonEdit = new System.Windows.Forms.Button();
             this.buttonDel = new System.Windows.Forms.Button();
             this.comboBoxAgents = new System.Windows.Forms.ComboBox();
             this.comboBoxClients = new System.Windows.Forms.ComboBox();
             this.comboBoxRealEstate = new System.Windows.Forms.ComboBox();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // textBoxPrice
@@ -106,6 +106,26 @@
             this.ListViewSupplySet.TabIndex = 5;
             this.ListViewSupplySet.UseCompatibleStateImageBehavior = false;
             this.ListViewSupplySet.View = System.Windows.Forms.View.Details;
+            this.ListViewSupplySet.SelectedIndexChanged += new System.EventHandler(this.ListViewSupplySet_SelectedIndexChanged);
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "Риелтор";
+            this.columnHeader1.Width = 116;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Клиент";
+            this.columnHeader2.Width = 120;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Объекты недвижимости";
+            this.columnHeader3.Width = 144;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Цена";
             // 
             // buttonAdd
             // 
@@ -115,6 +135,7 @@
             this.buttonAdd.TabIndex = 6;
             this.buttonAdd.Text = "Создать";
             this.buttonAdd.UseVisualStyleBackColor = true;
+            this.buttonAdd.Click += new System.EventHandler(this.buttonAdd_Click);
             // 
             // buttonEdit
             // 
@@ -124,6 +145,7 @@
             this.buttonEdit.TabIndex = 7;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // buttonDel
             // 
@@ -133,6 +155,7 @@
             this.buttonDel.TabIndex = 8;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // comboBoxAgents
             // 
@@ -160,25 +183,6 @@
             this.comboBoxRealEstate.Size = new System.Drawing.Size(233, 21);
             this.comboBoxRealEstate.TabIndex = 11;
             // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Риелтор";
-            this.columnHeader1.Width = 116;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Клиент";
-            this.columnHeader2.Width = 120;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Объекты недвижимости";
-            this.columnHeader3.Width = 144;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "Цена";
-            // 
             // SupplySet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -198,6 +202,7 @@
             this.Controls.Add(this.textBoxPrice);
             this.Name = "SupplySet";
             this.Text = "Предложение";
+            this.Load += new System.EventHandler(this.SupplySet_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
