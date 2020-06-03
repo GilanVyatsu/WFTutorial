@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
-    public partial class FormClient : Form
+    public partial class FormClient : System.Windows.Forms.Form
     {
         public FormClient()
         {

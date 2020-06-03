@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
 
 namespace Esoft_Project
 {
-    public partial class SupplySet : Form
+    public partial class SupplySet : System.Windows.Forms.Form
     {
         public SupplySet()
         {
@@ -57,7 +57,7 @@ namespace Esoft_Project
                 comboBoxRealEstate.Items.Add(string.Join(" ", item));
             }
         }
-        public partial class FormSupply : Form
+        public partial class FormSupply : System.Windows.Forms.Form
         {
             public FormSupply()
             {

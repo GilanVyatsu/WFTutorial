@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
-    public partial class FormAgent : Form
+    public partial class FormAgent : System.Windows.Forms.Form
     {
         public FormAgent()
         {

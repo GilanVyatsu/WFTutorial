@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
-    public partial class SluppySet : Form
+    public partial class SluppySet : System.Windows.Forms.Form
     {
         public SluppySet()
         {

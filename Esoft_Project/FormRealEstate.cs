@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Esoft_Project
 {
-    public partial class RealEstateSet : Form
+    public partial class RealEstateSet : System.Windows.Forms.Form
     {
         public RealEstateSet()
         {
