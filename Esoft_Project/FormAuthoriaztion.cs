@@ -66,5 +66,10 @@ namespace Esoft_Project
                 }
             }
         }
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

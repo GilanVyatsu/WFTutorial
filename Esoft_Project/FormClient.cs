@@ -94,7 +94,7 @@ namespace Esoft_Project
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonEdit_Click(object sender, EventArgs e)
         {
             //условие, если в listView выбран 1 элемент
             if (listViewClient.SelectedItems.Count == 1)

@@ -58,7 +58,7 @@
             this.button1.TabIndex = 1;
             this.button1.Text = "Клиенты";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.buttonClient_Click);
             // 
             // button2
             // 
@@ -68,7 +68,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "Риелторы";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.buttonAgent_Click);
             // 
             // button3
             // 
@@ -88,7 +88,7 @@
             this.buttonOpenSopplySet.TabIndex = 4;
             this.buttonOpenSopplySet.Text = "Предложения";
             this.buttonOpenSopplySet.UseVisualStyleBackColor = true;
-            this.buttonOpenSopplySet.Click += new System.EventHandler(this.button4_Click);
+            this.buttonOpenSopplySet.Click += new System.EventHandler(this.buttonSupplySet_Click);
             // 
             // button5
             // 
@@ -98,6 +98,7 @@
             this.button5.TabIndex = 5;
             this.button5.Text = "Подребности";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.buttonDemandSet_Click);
             // 
             // button6
             // 
@@ -107,11 +108,12 @@
             this.button6.TabIndex = 6;
             this.button6.Text = "Сделки";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.buttonDealSet_Click);
             // 
             // labelHello
             // 
             this.labelHello.AutoSize = true;
-            this.labelHello.Location = new System.Drawing.Point(113, 9);
+            this.labelHello.Location = new System.Drawing.Point(123, 9);
             this.labelHello.Name = "labelHello";
             this.labelHello.Size = new System.Drawing.Size(44, 13);
             this.labelHello.TabIndex = 7;

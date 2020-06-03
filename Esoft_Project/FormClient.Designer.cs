@@ -210,7 +210,7 @@
             this.buttonEdit1.TabIndex = 15;
             this.buttonEdit1.Text = "Изменить";
             this.buttonEdit1.UseVisualStyleBackColor = true;
-            this.buttonEdit1.Click += new System.EventHandler(this.button1_Click);
+            this.buttonEdit1.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // FormClient
             // 

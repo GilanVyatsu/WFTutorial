@@ -31,14 +31,14 @@ namespace Esoft_Project
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void buttonClient_Click(object sender, EventArgs e)
         {
             //Задаем новую форму из класса Клиент и открываем ее
             Form formClient = new FormClient();
             formClient.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonAgent_Click(object sender, EventArgs e)
         {
             //Задаем новую формулу из класса Агент и открываем ее
             Form formAgent = new FormAgent();
@@ -52,13 +52,23 @@ namespace Esoft_Project
             formRealEstate.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void buttonSupplySet_Click(object sender, EventArgs e)
         {
             Form formSupply = new FormSupply();
             formSupply.Show()
         }
 
         private void labelHello_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDemandSet_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonDealSet_Click(object sender, EventArgs e)
         {
 
         }

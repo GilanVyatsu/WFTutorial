@@ -45,6 +45,7 @@
             this.buttonCancel.TabIndex = 0;
             this.buttonCancel.Text = "Отмена";
             this.buttonCancel.UseVisualStyleBackColor = true;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
             // 
             // buttonOK
             // 
@@ -62,6 +63,7 @@
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(206, 20);
             this.textBoxLogin.TabIndex = 2;
+            this.textBoxLogin.UseSystemPasswordChar = true;
             // 
             // textBoxPassword
             // 
