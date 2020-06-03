@@ -63,6 +63,7 @@
             this.buttonDel.TabIndex = 2;
             this.buttonDel.Text = "Удалить";
             this.buttonDel.UseVisualStyleBackColor = true;
+            this.buttonDel.Click += new System.EventHandler(this.buttonDel_Click);
             // 
             // label1
             // 
@@ -139,6 +140,7 @@
             this.listViewDealSet.TabIndex = 8;
             this.listViewDealSet.UseCompatibleStateImageBehavior = false;
             this.listViewDealSet.View = System.Windows.Forms.View.Details;
+            this.listViewDealSet.SelectedIndexChanged += new System.EventHandler(this.listViewDealSet_SelectedIndexChanged);
             // 
             // columnHeader1
             // 
@@ -242,6 +244,7 @@
             this.buttonEdit.TabIndex = 21;
             this.buttonEdit.Text = "Изменить";
             this.buttonEdit.UseVisualStyleBackColor = true;
+            this.buttonEdit.Click += new System.EventHandler(this.buttonEdit_Click);
             // 
             // FormDealSet
             // 

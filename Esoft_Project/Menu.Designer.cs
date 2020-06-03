@@ -35,13 +35,14 @@
             this.buttonOpenSopplySet = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
+            this.labelHello = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Logo
             // 
             this.Logo.Image = global::Esoft_Project.Properties.Resources.thumbnail;
-            this.Logo.Location = new System.Drawing.Point(12, 2);
+            this.Logo.Location = new System.Drawing.Point(12, 12);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(255, 111);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -107,11 +108,22 @@
             this.button6.Text = "Сделки";
             this.button6.UseVisualStyleBackColor = true;
             // 
+            // labelHello
+            // 
+            this.labelHello.AutoSize = true;
+            this.labelHello.Location = new System.Drawing.Point(113, 9);
+            this.labelHello.Name = "labelHello";
+            this.labelHello.Size = new System.Drawing.Size(44, 13);
+            this.labelHello.TabIndex = 7;
+            this.labelHello.Text = "Привет";
+            this.labelHello.Click += new System.EventHandler(this.labelHello_Click);
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(279, 561);
+            this.Controls.Add(this.labelHello);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.buttonOpenSopplySet);
@@ -125,6 +137,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -137,6 +150,7 @@
         private System.Windows.Forms.Button buttonOpenSopplySet;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label labelHello;
     }
 }
 

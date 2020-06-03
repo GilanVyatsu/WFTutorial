@@ -190,4 +190,57 @@ else
             else MessageBox.Show("Данные не выбраны", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Information)
 
         }
+
+        private void buttonEdit_Click(object sender, EventArgs e)
+        {
+            if (listViewDealSet.SelectedItems.Count == 1)
+            {
+
+                DealSet deal = listViewDealSet.SelectedItems[0].Tag as DealSet;
+
+                deal.idSupply = Convert.ToInt32(comboBoxSupply.SelectedItem.ToString().Split('.')[0]);
+                    deal.idDemand = Convert.ToInt32(comboBoxDemand.SelectedItem.ToString().Split('.')[0]);
+                Program.wftDb.SaveChanges();
+                ShowDealSet();
+            }
+
+        }
+
+        private void buttonDel_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (listViewDealSet.SelectedItems.Count == 1)
+                {
+
+                    DealSet deal = listViewDealSet.SelectedItems[0].Tag as DealSet;
+                    Program.wftDb.DealSet.Remove(deal);
+                    Program.wftDb.SaveChanges();
+                    ShowDealSet();
+                }
+                comboBoxSupply.SelectedItem = null;
+                comboBoxDemand.SelectedItem = null;
+            }
+            catch
+            {
+                MessageBox.Show("Heвозможно удалить, эта запись используется", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+ }
+
+        private void listViewDealSet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (listViewDealSet.SelectedItems.Count == 1)
+            {
+                //ищем элемент из таблицы по тегу
+                DealSet deal = listViewDealSet.SelectedItems[0].Tag as DealSet;
+                comboBoxSupply.SelectedIndex = comboBoxSupply.FindString(deal.idSupply.ToString()); comboBoxDemand.SelectedIndex = comboBoxDemand.FindString(deal.idDemand.ToString());
+            }
+            else
+            {
+                comboBoxSupply.SelectedItem = null; 
+                comboBoxDemand.SelectedItem = null;
+            }
+
+        }
+    }
     } }

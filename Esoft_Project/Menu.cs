@@ -12,9 +12,13 @@ namespace Esoft_Project
 {
     public partial class Menu : Form
     {
+        private object buttonOpenAgents;
+
         public Menu()
         {
             InitializeComponent();
+            if (FormAuthoriaztion.users.type == "agent") buttonOpenAgents.Enabled = false;
+            labelHello.Text = "Приветствую тебя, " + FormAuthoriaztion.users.login;
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -52,6 +56,11 @@ namespace Esoft_Project
         {
             Form formSupply = new FormSupply();
             formSupply.Show()
+        }
+
+        private void labelHello_Click(object sender, EventArgs e)
+        {
+
         }
     }
 
